@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>github_intro</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h2 id="github-intro">GITHUB INTRO:</h2>
+<ul>
+<li>Understand Github Workflow:
+<ul>
+<li><a href="https://guides.github.com/introduction/flow/">https://guides.github.com/introduction/flow/</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="always-pull-before-a-push">Always Pull Before a Push</h2>
+<p>This is a bedrock rule. Before you try to push code out to the repository, you should always pull all the current changes from the remote repository to your local machine. Doing so will ensure that your local copy is in sync with the remote repository. Remember, other people have been pushing to the remote copy, and if you push before syncing up, you could end up with multiple heads or merge conflicts when you push.</p>
+<p>By default, Git will not allow you to push changes onto a branch that has remote commits. You can turn this feature off, but it’s not recommended.</p>
+<h2 id="pull-frequently">Pull frequently</h2>
+<p>On large teams, the central repository will continuously be changing. You should endeavor to keep your local machine as close to the remote repository as possible. The way to do that is to pull all the changes on the remote server to your local copy. You can do this as often as you like, and should do it frequently — at least once a day if not more.</p>
+<h2 id="push-infrequently">Push infrequently</h2>
+<p>When you push, you are inflicting your changes on others. You should only do this when you know you won’t break the build, when you have carefully reviewed what it is that you are pushing, and when you feel that your local code is in a state that will be useful to others.</p>
+<p>Remember, when you push, everyone will see what you’ve done. Be sure it’s right.</p>
+<h1 id="commit-frequently">Commit Frequently</h1>
+<p>Many developers don’t commit often enough. They end up committing after making many changes, and their comment is, as a result, inadequate to describe all the changes made. Trying to review large, ponderous commits is irritating and counter-productive.</p>
+<p>Instead, you should often commit small, single changes with carefully crafted commit messages that tell what the small, discrete change is. There’s nothing wrong with many little easily-understood commits. Each commit should be a logical, distinct change to your code. If you feel the need to use the word “and” in your commit message, you are probably not committing often enough. Small commits are easier to understand and to revert later if need be.</p>
+<h2 id="merge-“forward”-frequently">Merge “forward” frequently</h2>
+<p>Assuming that you are using a standard Git workflow, you’re likely spending most of your time on a branch that originated on the develop branch. Wherever your branch originated, you should frequently merge the original branch into yours.</p>
+<p>By doing so, you ensure that your branch doesn’t diverge too far from the original branch — remember, others will be changing that original branch as well. You’ll limit merge conflicts and generally make your life easier by doing so.</p>
+<h1 id="create-pull-requests-infrequently">Create Pull Requests Infrequently</h1>
+<p>While you can merge “forward” as much as you want, you should be far more cautious in creating pull requests to merge your code back into the develop branch.</p>
+<p>Your organization will likely have a policy on pull requests, but you should take care in creating them. A pull request is asking people to look your code over with a fine-toothed comb, so do them with care. You should make a pull request only after your code is in a state that will result in a clear, discrete, and complete addition to the code base. Again, if you feel the need to use the word “and” in describing your pull request, it’s likely too big.</p>
+<p>Create pull requests infrequently and with care.</p>
+<p><strong>Points to remember:</strong></p>
+<ul>
+<li>Please create a branch name with the feature name that you currently working on. EX: login-auth, auth-bug-fix etc…</li>
+<li>Don’t push sensitive data and files to a repository. Use <code>gitignore</code> file to avoid pushing the sensitive data and unnecessary files/folders.</li>
+<li>If you are a team member :
+<ul>
+<li><em><strong>commit changes - pull [from remote repo] - push</strong></em></li>
+</ul>
+</li>
+<li>Commit after every bit of work. This can help you track the code easily.</li>
+</ul>
+<blockquote>
+<p>If you find any difficulty in doing the above things, feel free to reach me out.</p>
+</blockquote>
+<p>Resources to learn Git:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=MJUJ4wbFm_A">Introduction to git</a></li>
+<li><a href="https://www.youtube.com/watch?v=eulnSXkhE7I">Git and Github</a></li>
+<li><a href="https://www.youtube.com/watch?v=2sjqTHE0zok">Version Control</a></li>
+</ul>
+</div>
+</body>
+
+</html>
